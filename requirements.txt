@@ -12,3 +12,4 @@ matplotlib
 scipy
 pysqlite3-binary
 pypdf
+tqdm
