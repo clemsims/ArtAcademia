@@ -19,7 +19,7 @@ def create_rag(document_folder="documents"):
     import streamlit as st
     embeddings_model = MistralAIEmbeddings(
         model="mistral-embed",
-        api_key=st.secrets["MISTRAL"]['KEY'])
+        api_key=st.secrets["MISTRAL"]['KEY'],
     )
 
     docs_vectorstore = Chroma(
