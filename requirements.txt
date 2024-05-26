@@ -9,3 +9,4 @@ lxml
 chromadb
 langchain_mistralai
 matplotlib
+scipy
