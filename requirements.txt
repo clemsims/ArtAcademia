@@ -7,3 +7,4 @@ streamlit
 langchain-community
 lxml
 chromadb
+langchain_mistralai
