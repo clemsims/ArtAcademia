@@ -237,7 +237,7 @@ Examples:
 
         # Initialize Groq Langchain chat object and conversation
         groq_chat = ChatGroq(
-            groq_api_key=groq_api_key,
+            groq_api_key=st.secrets["GROQ"]['API_KEY'],
             model_name=model,
         )
 
