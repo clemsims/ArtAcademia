@@ -86,13 +86,10 @@ Examples:
         """
     CONVERSATIONAL_MEMORY_LENGHT = 10
 
-    # Load the configuration file
-    config = toml.load('config.toml')
 
     # Access the keys
-    groq_api_key = config['GROQ']['API_KEY']
 
-    client_groq = Groq(api_key=groq_api_key)
+    client_groq = Groq(api_key=st.secrets["GROQ"]['API_KEY'])
 
     st.set_page_config(page_icon="💬", layout="wide",  page_title="Socrates...")
 

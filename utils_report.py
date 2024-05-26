@@ -45,7 +45,7 @@ def text_analysis(human_msg):
     """Generates a pointer for the user's message based on the model response."""
 
     client = Groq(
-        api_key='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',
+        api_key=st.secrets["GROQ"]['API_KEY'],
     )
 
     system_prompt = '''you are a world class expert on communication on technical aspect. You are a jury rating the quality of delivery of the user. You HAVE TO GIVE one pointer to bring the delivery to the best level possible to a knowledgeable audience.
@@ -88,8 +88,7 @@ def get_similarity_rating(human_msg, ai_msg):
     """Generates a similarity rating between two sentences."""
 
     client = Groq(
-        api_key='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',
-    )
+        api_key=st.secrets["GROQ"]['API_KEY'])
 
     system_prompt = '''you are a jury rating on an integer scale from 0 to 10 the similarity in meaning of the two sentences that i am going to give you. Your aim is only to output a number between 0 and 10.
     INSTRUCTIONS: You will output the integer rating in the following pattern: "0-10".
