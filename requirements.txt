@@ -10,3 +10,4 @@ chromadb
 langchain_mistralai
 matplotlib
 scipy
+pysqlite3-binary
